@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"cd client && npm run build",
-    "install-client":"cd client && npm install",
-    "heroku-postbuild":"npm run install-client && npm run build",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
     "start": "node server.js",
-    "client":"cd client && npm start",
+    "client": "cd client && npm start",
     "dev": "concurrently -n 'server,client' -c 'red,green' \"nodemon server.js\" \"npm run client\""
   },
   "keywords": [],
@@ -17,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.24.0",
+    "concurrently": "^7.0.0",
     "cors": "^2.8.5",
     "dotenv": "^11.0.0",
     "express": "^4.17.2",
