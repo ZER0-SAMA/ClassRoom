@@ -1,0 +1,102 @@
+
+ .new-meeting{
+    height: 400px;
+    width:300px;
+    /* border:1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 40px;
+    background-color: #CDF5FB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+   #new-meeting-link{
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 30px;
+    width:170px;
+    border-radius: 50px;
+    background-color: #F15B5B;
+    color: white;
+    margin: 0px 4px 0px 0px;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-style:none;
+   }
+   #new-meeting-link:focus{
+       /* outline: outset; */
+       outline-style: outset;
+       outline-color: darkblue; 
+   }
+   #new-meeting-link::-webkit-input-placeholder{
+     color: white;
+     text-align: center;
+   }
+   #new-meeting-btns{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 30px;
+    width:100px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: lightblue;
+    color:#F15B5B ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: darkblue;
+    /* border-style: hidden; */
+  
+   }
+   #new-meeting-column{
+    margin: 10px 0px 0px 0px;
+   }
+   #username{
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 30px;
+    width:170px;
+    border-radius: 50px;
+    background-color: #F15B5B;
+    color: white;
+    margin: 0px 4px 0px 0px;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-style:none;
+   }
+   #username:focus{
+    /* outline: outset; */
+    outline-style: outset;
+    outline-color: darkblue; 
+}
+#username::-webkit-input-placeholder{
+  color: white;
+  text-align: center;
+}
+#username-set{
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+
+
+#join-meeting-link{
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 30px;
+  width:170px;
+  border-radius: 50px;
+  background-color: #F15B5B;
+  color: white;
+  margin: 0px 4px 0px 0px;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border-style:none;
+ }
+ #join-meeting-link:focus{
+  /* outline: outset; */
+  outline-style: outset;
+  outline-color: darkblue; 
+}
+#join-meeting-link::-webkit-input-placeholder{
+color: white;
+text-align: center;
+}
