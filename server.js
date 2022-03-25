@@ -149,6 +149,12 @@ app.use("/meeting",meeting)
 app.use("/new",newmeeting)
 
 
+
+
+
+
+     
+
 if(process.env.NODE_ENV==='production'){
     app.use(express.static('client/build'))
 }
@@ -159,20 +165,14 @@ server.listen(PORT,()=>{
 
 
 
-     
-
-
-
-
-
  
 /////connection error
-io.engine.on("connection_error", (err) => {
-    console.log(err.req);      // the request object
-    console.log(err.code);     // the error code, for example 1
-    console.log(err.message);  // the error message, for example "Session ID unknown"
-    console.log(err.context);  // some additional error context
-  });
+// io.engine.on("connection_error", (err) => {
+//     console.log(err.req);      // the request object
+//     console.log(err.code);     // the error code, for example 1
+//     console.log(err.message);  // the error message, for example "Session ID unknown"
+//     console.log(err.context);  // some additional error context
+//   });
 
 
 // fir-rtc-4dd75
