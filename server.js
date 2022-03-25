@@ -1,4 +1,4 @@
-const express=require("express")
+const express=require('express')
 const app = express()
 const server =require("http").createServer(app)
 const PORT = process.env.PORT ||8080
@@ -138,11 +138,11 @@ app.use(cors({
     origin:'*',
     credentials:true
 }))
-app.use(express.static(__dirname+'/public'))
-app.get("/",(req,res)=>{
-    res.sendFile(__dirname+"/index.html")
+// app.use(express.static(__dirname+'/public'))
+// app.get("/",(req,res)=>{
+//     res.sendFile(__dirname+"/index.html")
     
-})
+// })
 // app.use("/",home)
 // app.use("/login",login)
 // app.use("/dashboard",dashboard)
@@ -157,9 +157,9 @@ app.use("/new",newmeeting)
      
 
 if(process.env.NODE_ENV==='production'){
-    app.use(express.static('client/build'))
-    app.get("*", function (request, response) {
-        response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
+    app.use(express.static('client/build'));
+    app.get("*", function (req, res) {
+        res.sendFile(path.join(__dirname, 'client','build', 'index.html'));
       });
 }
 server.listen(PORT,()=>{
