@@ -9,6 +9,7 @@ const home =require('./Routes/home')
 const newmeeting=require('./Routes/newmeeting')
 const cors =require('cors')
 const uuid = require("uuid");
+const path =require("path")
 // const { RTCPeerConnection, RTCSessionDescription } = window;
 
 const users= new Map()
@@ -157,6 +158,9 @@ app.use("/new",newmeeting)
 
 if(process.env.NODE_ENV==='production'){
     app.use(express.static('client/build'))
+    app.get("*", function (request, response) {
+        response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
+      });
 }
 server.listen(PORT,()=>{
     console.log(`Server is lsitening at ${PORT}`)
